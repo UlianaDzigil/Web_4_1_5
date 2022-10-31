@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Джигіль У.А., група ІА-91</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Форма для заповнення</h1>
+<form>
+    <p><label>ПІБ</label><br><input type="text" id="name" placeholder="Іванов І.П."  required="true"/></p>
+    <p><label>Телефон</label><br><input type="text" id="phone" placeholder="(097)-293-13-14" required="true"/></p>
+    <p><label>ID-card</label><br><input type="text" id="card" placeholder="KЛ №123456" required="true"/></p>
+    <p><label>Факультет</label><br><input type="text" id="faculty" placeholder="фіот"  required="true"/></p>
+    <p><label>Дата народження</label><br><input type="text" id="dateOfBirth" placeholder="12.12.2000" required="true"/></p>
+    <input onclick="fieldsCheck()" type="button" id="btn" value="Підтвердити" />
+    <script src="script.js"></script>
+</form>
+<div id="info">
+    <label><strong>ПІБ: </strong></label><p id="new_name"></p>
+    <label><strong>Телефон: </strong></label><p id="new_phone"></p>
+    <label><strong>ID-card: </strong></label><p id="new_card"></p>
+    <label><strong>Факультет: </strong></label><p id="new_faculty"></p>
+    <label><strong>Дата народження: </strong></label><p id="new_dateOfBirth"></p>
+</div>
+</body>
+</html>
